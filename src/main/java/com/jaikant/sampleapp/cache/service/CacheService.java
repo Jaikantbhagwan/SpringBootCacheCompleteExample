@@ -1,6 +1,6 @@
 
 
-package service;
+package com.jaikant.sampleapp.cache.service;
 
 
 import java.util.HashMap;
@@ -9,10 +9,12 @@ import java.util.Map;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
+import org.springframework.stereotype.Component;
 
 import com.jaikant.sampleapp.cache.model.Customer;
 
 
+@Component
 public class CacheService {
 
     private static Map<Long, Customer> store = new HashMap<Long, Customer>();
