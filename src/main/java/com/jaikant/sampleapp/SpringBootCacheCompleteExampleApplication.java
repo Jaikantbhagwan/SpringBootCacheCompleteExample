@@ -1,6 +1,6 @@
 
 
-package com.jaikant.sampleapp.cache;
+package com.jaikant.sampleapp;
 
 
 import org.springframework.boot.SpringApplication;

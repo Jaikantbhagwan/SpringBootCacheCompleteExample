@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.jaikant.sampleapp.rest.model.User;
@@ -22,9 +23,9 @@ import com.jaikant.sampleapp.rest.service.UserService;
 import com.jaikant.sampleapp.rest.util.CustomErrorType;
 
 
-@org.springframework.web.bind.annotation.RestController
+@RestController
 @RequestMapping("/api")
-public class RestController {
+public class RestApiController {
 
     public static final Logger logger = LoggerFactory.getLogger(RestController.class);
 
